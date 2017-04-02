@@ -1,4 +1,5 @@
-# fbmR : R Package for Persuasive Technology Data Analysis
+# fbmR
+## R Package for Persuasive Technology Data Analysis
 
 ## How to install
 On R console type:
