@@ -16,4 +16,4 @@ To check if the fbmR package was properly installed run the demo:
 ```
 
 ### Done!
-Now you can analyse your persuasive data in R.
+Now you can analyze your persuasive data in R.
