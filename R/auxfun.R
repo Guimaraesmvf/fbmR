@@ -48,10 +48,13 @@ harmonic.deviation <- function(val){
 #' @export
 
 fbmR.demo <- function(){
-   par(mfrow=c(2,1))
-
-   aa <- fbmR::axis.Ability(n=50, full.estimation = T)
-   mm <- fbmR::axis.Motivation(n=50, full.estimation = T)
-   fbmR::plotMA(aa, mm, dynamic.threshold = T, harmean = T, fbm.threshold = T)
-   fbmR::trigger.status(aa,mm,plot=T)
+   aa <- fbmR::axis.Ability(n=300, full.estimation = T)
+   mm <- fbmR::axis.Motivation(n=300, full.estimation = T)
+   par(mfrow=c(2,2))
+   fbmR::plotMA(aa, mm, dynamic.threshold = T, harmean = T, fbm.threshold = T, id=100)
+   fbmR::findTriggers(aa,mm, type = "spark", dyn = T, zone = T)
+   fbmR::findTriggers(aa,mm, type = "facilitator", dyn = T, zone = T)
+   fbmR::findTriggers(aa,mm, type = "signal", dyn = T, zone = T)
+   fbmR::trigger.status(aa,mm)
+   par(mfrow=c(1,1))
 }
