@@ -1,7 +1,8 @@
 # fbmR
 ## R Package for Persuasive Technology Data Analysis
 
-## How to install
+
+### How to install
 On R console type:
 ```
 > install.packages("devtools")
